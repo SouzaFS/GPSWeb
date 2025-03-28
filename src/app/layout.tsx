@@ -1,4 +1,4 @@
-import { Header } from "../components/header";
+import { Header } from "@/components/header/header";
 import "./globals.css";
 
 
@@ -9,11 +9,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>GPSWeb API</title>
+      </head>
       <body className={`antialiased`}>
-        <Header/>
+        <Header />
 
         {children}
       </body>
+
     </html>
   );
 }
